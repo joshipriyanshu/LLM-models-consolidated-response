@@ -47,7 +47,7 @@ const Imageprocessor = () => {
 
       const result = await model.generateContent([prompt, ...imageParts])
 
-      const text = await result.response.text()
+      const text =  result.response.text()
 
       console.log(text)
       alert(text)
